@@ -12,15 +12,15 @@ function App() {
 	return <>
 
 	{/* Navbar */}
-	<Navbar />
+	<Navbar />	
 	
 	{/* Content */}
-	{/* <Routes>
+	<Routes>
 		<Route path="/" element={<Homepage />} />
 		<Route path="/galeri-kegiatan" element={<Galeripage />} />
 		<Route path="/program-kerja" element={<Prokerpage />} />
 		<Route path="/anggota" element={<Memberpage />} />
-	</Routes> */}
+	</Routes>
 
 	{/* Footer */}
 	{/* <Footer /> */}
