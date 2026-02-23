@@ -21,7 +21,7 @@ const Homepage = () => {
         <div className="homepage flex items-center justify-center w-full">
             <div className="container flex flex-col items-center w-full pt-32 md:pt-0 overflow-hidden">
                 {/* Hero Section */}
-                <div id="beranda" className="hero md:relative flex flex-col items-center justify-center md:h-screen mx-5 md:mx-0 overflow-hidden">
+                <div id='beranda' className="hero md:relative flex flex-col items-center justify-center md:h-screen mx-5 md:mx-0 overflow-hidden">
                     <div className="box-hero-1 md:relative lg:block hidden">
                         <Swiper
                             spaceBetween={0}
@@ -37,7 +37,7 @@ const Homepage = () => {
                             }}
                             navigation={false}
                             modules={[Autoplay, Pagination, Navigation, EffectFade]}
-                            className="mySwiper w-screen"
+                            className="mySwiper w-screen h-screen"
                         >
                         <SwiperSlide className="relative">
                             <img src="/assets/slider1-hero.webp" alt="" className="md:absolute inset-0 w-screen h-screen" />
@@ -81,7 +81,7 @@ const Homepage = () => {
                 </div>
 
                 {/* About Section*/}
-                <div id="tentang-kami" className="about-us flex flex-col md:flex-row items-center w-screen h-screen md:pt-28 px-30">
+                <div id='tentang-kami' className="about-us flex flex-col md:flex-row items-center w-screen h-screen md:pt-28 px-30">
                     <div className="box-about-1 flex flex-col items-center w-full md:w-1/2">
                         <div className="flex flex-col gap-5 pt-15 px-10 w-screen md:w-full text-primary">
                             <div className="flex flex-row gap-1">
@@ -104,7 +104,7 @@ const Homepage = () => {
                                 <h1 className="leading-7 font-bold italic text-2xl text-secondary">20+ <br /><span className="font-normal not-italic text-primary">Members</span></h1>
                             </div>
                             <div className="flex flex-row items-center py-2 pr-4 pl-15 gap-3 w-fit text-right border-2 border-secondary rounded-2xl">
-                                <h1 className="leading-7 font-bold italic text-2xl text-secondary">2 <br /><span className="font-normal not-italic text-primary">Programs</span></h1>
+                                <h1 className="leading-7 font-bold italic text-2xl text-secondary">02 <br /><span className="font-normal not-italic text-primary">Programs</span></h1>
                                 <PiMedal className='p-2 w-12 h-12 text-white bg-linear-to-r from-[#16A34A] to-[#22C55E] rounded-md'/>
                             </div>
                         </div>  
@@ -112,6 +112,35 @@ const Homepage = () => {
 
                     <div className="box-about-2 flex items-center justify-center w-screen md:w-1/2">
                         <img src="/assets/about.webp" alt="" className="w-sm md:w-lg" />
+                    </div>
+                </div>
+
+                {/* Visi Misi Section */}
+                <div id='visi-misi' className="visi-misi flex justify-center md:px-30 pt-28 w-screen h-screen overflow-hidden">"
+                    <div className="box-visi-misi-1 relative flex flex-col items-center w-screen h-screen">
+                        <div className="hidden md:block absolute -right-7 -top-7 bg-yellow-300">
+                            <img src="/assets/visi-misi.webp" alt="" className="w-sm" />
+                        </div>
+                        <div className="absolute bottom-60 md:bottom-30 left-0 w-fit">
+                            <img src="/assets/visi-misi.webp" alt="" className="w-lg" />
+                        </div>
+                    </div>
+                    <div className="box-visi-misi-2 absolute flex flex-col items-center pt-10 md:pt-0 px-10 gap-7 md:w-7xl">
+                        <div className="">
+                            <div className="flex justify-center gap-1">
+                                <div className="h-1.5 w-7 mb-3 bg-green-500 mt-2 rounded-full"></div>
+                                <div className="h-1.5 w-2 mb-3 bg-green-500 mt-2 rounded-full"></div> 
+                            </div>
+                            <h1 className="font-black text-secondary text-4xl md:text-5xl">VISI <span className="text-primary">MISI</span></h1>
+                        </div>
+                        <div className="w-fit p-5 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] rounded-2xl text-primary">
+                            <h1 className="mb-3 text-3xl font-extrabold text-center">VISI</h1>
+                            <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolorum porro necessitatibus dicta! Nesciunt fugit architecto officia unde facere pariatur inventore. Est illum saepe ut ad dolorem architecto maiores veniam?</p>
+                        </div>
+                        <div className="w-fit p-5 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] rounded-2xl text-primary">
+                            <h1 className="mb-3 text-3xl font-extrabold text-center">MISI</h1>
+                            <p className="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat culpa dolorem eum adipisci sed rem, unde maxime, amet magnam a exercitationem non veniam voluptatibus, aspernatur illo accusamus vel voluptate minus dolorum numquam quibusdam. Quia est ut ab voluptas nulla, quas consequatur, totam praesentium molestias at ea sunt magni cupiditate natus, iure optio suscipit iusto voluptatibus alias neque consectetur in facilis ipsa impedit. Enim, itaque et. Optio similique ea dolores accusantium eligendi error architecto, quia pariatur hic aliquid quae necessitatibus. Molestias, quas? Alias impedit est atque. Labore, repellat voluptates sequi iusto consequuntur laboriosam. Distinctio sint nobis hic deleniti ratione aut cum quas iure quae soluta? Soluta ea dignissimos, ratione dolor, dicta similique ducimus neque quae temporibus commodi exercitationem cum vero molestiae. Natus error at, veritatis provident ipsam reprehenderit vel in, corporis laborum libero ullam officia ut odit voluptatum delectus eveniet doloremque nemo maxime velit modi sit dignissimos alias dolor iusto! Atque.</p>
+                        </div>
                     </div>
                 </div>
             </div>

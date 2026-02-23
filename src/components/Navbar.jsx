@@ -25,6 +25,9 @@ const Navbar = () => {
 
     let dropDownActive = isDropdownOpen ? "flex" : "hidden";
 
+    // TODO: handle click for active menu
+    // const [activeMenu, setActiveMenu] = React.useState("beranda");
+
     return (
     <>
         <div className="navbar fixed w-full flex justify-center z-50 transition-all">
@@ -53,7 +56,9 @@ const Navbar = () => {
                         `}>
                         <li className="flex items-center gap-3">
                             <FiHome className="text-2xl md:hidden block"/>
-                            <a href="#beranda" className="font-medium hover:text-secondary hover:font-semibold transition-transform duration-300">Beranda</a>
+                            <a href="#beranda"
+                            // onClick={() => setActiveMenu("beranda")}
+                            className='font-medium hover:text-secondary hover:font-semibold transition-transform duration-300'>Beranda</a>
                         </li>
                         <li className="flex items-center gap-3">
                             <PiMedal className="text-2xl md:hidden block"/>
@@ -61,7 +66,7 @@ const Navbar = () => {
                         </li>
                         <li className="flex items-center gap-3">
                             <FiUsers className="text-2xl md:hidden block"/>
-                            <a href="#" className="font-medium hover:text-secondary hover:font-semibold transition-transform duration-300">Profile</a>
+                            <a href="#visi-misi" className="font-medium hover:text-secondary hover:font-semibold transition-transform duration-300">Profile</a>
                         </li>
                         <li className="relative flex flex-col md:flex-row items-center gap-3">
                             <div className="flex flex-row gap-3 w-full">
@@ -80,7 +85,7 @@ const Navbar = () => {
                                 md:absolute flex flex-col gap-3
                                 md:flex ${dropDownActive}
                                 left-5
-                                md:mt-44 w-max md:p-5 
+                                md:mt-44 w-max md:p-5
                                 rounded-xl
                                 md:bg-[#22C55E] text-white
                                 md:shadow-lg
