@@ -25,12 +25,9 @@ const Navbar = () => {
 
     let dropDownActive = isDropdownOpen ? "flex" : "hidden";
 
-    // TODO: handle click for active menu
-    // const [activeMenu, setActiveMenu] = React.useState("beranda");
-
     return (
     <>
-        <div className="navbar fixed w-full flex justify-center z-50 transition-all">
+        <div className="navbar fixed flex w-full justify-center z-50 transition-all">
             <div className="container bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] max-w-[85%] my-4 p-2 rounded-[20px]">
                 <div className="navbar-box flex items-center justify-between px-5 text-primary">
                     <div className="logo flex items-center gap-3">
@@ -43,9 +40,9 @@ const Navbar = () => {
                         fixed md:static 
                         flex md:flex-row  flex-col
                         p-8 md:p-0
+                        lg:gap-14 gap-8
                         ${menuActiveClass}
                         md:w-auto md:h-full
-                        lg:gap-14 gap-8
                         md:transision-none
                         translate-y-60 md:translate-y-0
                         rounded-r-[20px] 
@@ -82,10 +79,12 @@ const Navbar = () => {
 
                             {/* Dropdown Program Kerja Menu */}
                             <ul className={`
-                                md:absolute flex flex-col gap-3
-                                md:flex ${dropDownActive}
+                                md:absolute flex flex-col
+                                md:flex 
+                                gap-3 md:p-5
+                                ${dropDownActive}
                                 left-5
-                                md:mt-44 w-max md:p-5
+                                md:mt-44 w-max 
                                 rounded-xl
                                 md:bg-[#22C55E] text-white
                                 md:shadow-lg
@@ -109,9 +108,9 @@ const Navbar = () => {
                     </ul>
                     <div className="galeri flex items-center gap-2">
                         <a href="#" className="px-6 py-3 rounded-[25px] bg-linear-to-r from-[#22C55E] to-[#4ADE80] hover:from-[#16A34A] hover:to-[#22C55E] text-white transition-all duration-300">Galeri</a>
-                        <div className="block md:hidden" onClick={handleClick}>
-                            <FiMenu className="text-2xl" />
-                        </div>
+                    </div>
+                    <div className="block md:hidden" onClick={handleClick}>
+                        <FiMenu className="text-2xl" />
                     </div>
                 </div>
             </div>

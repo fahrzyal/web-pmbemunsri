@@ -55,7 +55,7 @@ const Homepage = () => {
                     </div>
 
                     <div className="box-hero-2 md:absolute flex flex-col items-center justify-center z-10 mb-10 w-fit">
-                        <img src="/assets/logo-pmbemunsri.webp" alt="" className="w-full md:w-32" />
+                        <img src="/assets/logo-pmbemunsri.webp" alt="" className="w-full md:w-32 transition-transform duration-500 hover:scale-105" />
                         <h1 className="text-center md:text-4xl text-2xl font-extrabold md:text-white text-primary leading-10 tracking-wide">
                             PROGRAM MAHASISWA BERDAMPAK <br />
                         <span className="md:text-3xl text-xl">
@@ -67,7 +67,7 @@ const Homepage = () => {
                         </h1>
                     </div>
 
-                    <div className="box-hero-3 md:absolute flex flex-col mb-5 gap-1 px-9 py-1 z-10 rounded-full items-center justify-center md:mt-96 w-fit bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] max-w-[90%]">
+                    <div className="box-hero-3 md:absolute flex flex-col mb-5 gap-1 px-9 py-1 z-10 rounded-full items-center justify-center md:mt-96 w-fit bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] transition-transform duration-500 hover:scale-105">
                         <div className="text-normal italic md:text-white text-primary">
                             <h2>Supported by :</h2>
                         </div>
@@ -81,8 +81,8 @@ const Homepage = () => {
                 </div>
 
                 {/* About Section*/}
-                <div id='tentang-kami' className="about-us flex flex-col md:flex-row items-center w-screen h-screen md:pt-28 px-30">
-                    <div className="box-about-1 flex flex-col items-center w-full md:w-1/2">
+                <div id='tentang-kami' className="about-us flex flex-col md:flex-row items-center w-screen h-fit md:h-screen md:pt-28 px-30">
+                    <div className="box-about-1 flex flex-col items-center w-screen md:w-1/2 h-fit md:h-full">
                         <div className="flex flex-col gap-5 pt-15 px-10 w-screen md:w-full text-primary">
                             <div className="flex flex-row gap-1">
                                 <div className="h-2 w-3 mb-5 bg-green-500 mt-2 rounded-full"></div> 
@@ -99,30 +99,32 @@ const Homepage = () => {
                         </div>
 
                         <div className="flex flex-col md:flex-row justify-center items-center gap-5 p-10 w-screen md:w-full">
-                            <div className="flex flex-row items-center py-2 pl-4 pr-15 gap-3 w-fit text-left border-2 border-secondary rounded-2xl">
+                            <div className="flex flex-row items-center mr-22 md:mr-0 py-2 pl-4 pr-15 gap-3 w-fit text-left border-2 border-secondary rounded-2xl transition-transform ease-in-out duration-500 hover:-rotate-5">
                                 <FiUsers className='p-2 w-12 h-12 text-white bg-linear-to-r from-[#16A34A] to-[#22C55E] rounded-md' />
                                 <h1 className="leading-7 font-bold italic text-2xl text-secondary">20+ <br /><span className="font-normal not-italic text-primary">Members</span></h1>
                             </div>
-                            <div className="flex flex-row items-center py-2 pr-4 pl-15 gap-3 w-fit text-right border-2 border-secondary rounded-2xl">
+                            <div className="flex flex-row items-center ml-22 md:ml-0 py-2 pr-4 pl-15 gap-3 w-fit text-right border-2 border-secondary rounded-2xl transition-transform ease-in-out duration-500 hover:rotate-5">
                                 <h1 className="leading-7 font-bold italic text-2xl text-secondary">02 <br /><span className="font-normal not-italic text-primary">Programs</span></h1>
                                 <PiMedal className='p-2 w-12 h-12 text-white bg-linear-to-r from-[#16A34A] to-[#22C55E] rounded-md'/>
                             </div>
                         </div>  
                     </div>
 
-                    <div className="box-about-2 flex items-center justify-center w-screen md:w-1/2">
-                        <img src="/assets/about.webp" alt="" className="w-sm md:w-lg" />
+                    <div className="box-about-2 relative flex items-center justify-center w-screen md:w-1/2 h-fit md:h-full">
+                        <img src="/assets/element-blurr.webp" alt="" className="absolute top-1 right-14 w-40 animate-spin [animation-duration:40s] origin-center"/>
+                        <img src="/assets/element-blurr.webp" alt="" className=" absolute bottom-130 md:bottom-6 left-40 md:left-19 w-10 md:w-30 animate-spin [animation-duration:40s] [animation-direction:reverse] origin-center"/>
+                        <img src="/assets/logo-pmbemunsri.webp" alt="" title="Logo PM BEM Unsri" className="hidden md:block absolute py-6 w-70 md:w-sm bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] rounded-2xl transition-transform ease-in-out duration-500 rotate-6 hover:rotate-0" />
                     </div>
                 </div>
 
                 {/* Visi Misi Section */}
-                <div id='visi-misi' className="visi-misi flex justify-center md:px-30 pt-28 w-screen h-screen overflow-hidden">"
+                <div id='visi-misi' className="visi-misi flex justify-center md:px-30 md:pt-28 w-screen h-screen overflow-hidden">"
                     <div className="box-visi-misi-1 relative flex flex-col items-center w-screen h-screen">
-                        <div className="hidden md:block absolute -right-7 -top-7 bg-yellow-300">
-                            <img src="/assets/visi-misi.webp" alt="" className="w-sm" />
+                        <div className="hidden md:block absolute -right-7 -top-7 w-fit">
+                            <img src="/assets/element-blurr.webp" alt="" className="w-sm animate-spin [animation-duration:90s] origin-center" />
                         </div>
-                        <div className="absolute bottom-60 md:bottom-30 left-0 w-fit">
-                            <img src="/assets/visi-misi.webp" alt="" className="w-lg" />
+                        <div className="absolute bottom-60 left-0 md:-left-20 md:bottom-5 w-fit">
+                            <img src="/assets/element-blurr.webp" alt="" className="w-lg animate-spin [animation-duration:110s] [animation-direction:reverse] origin-center" />
                         </div>
                     </div>
                     <div className="box-visi-misi-2 absolute flex flex-col items-center pt-10 md:pt-0 px-10 gap-7 md:w-7xl">
@@ -131,15 +133,25 @@ const Homepage = () => {
                                 <div className="h-1.5 w-7 mb-3 bg-green-500 mt-2 rounded-full"></div>
                                 <div className="h-1.5 w-2 mb-3 bg-green-500 mt-2 rounded-full"></div> 
                             </div>
-                            <h1 className="font-black text-secondary text-4xl md:text-5xl">VISI <span className="text-primary">MISI</span></h1>
+                            <h1 className="font-black text-secondary text-4xl md:text-5xl">FOKUS <span className="text-primary">& TUJUAN</span></h1>
                         </div>
-                        <div className="w-fit p-5 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] rounded-2xl text-primary">
-                            <h1 className="mb-3 text-3xl font-extrabold text-center">VISI</h1>
-                            <p className="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolorum porro necessitatibus dicta! Nesciunt fugit architecto officia unde facere pariatur inventore. Est illum saepe ut ad dolorem architecto maiores veniam?</p>
+                        <div className="w-full p-5 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] rounded-2xl text-primary">
+                            <h1 className="mb-3 text-3xl font-extrabold text-center">FOKUS</h1>
+                            <p className="text-center">
+                            PM-BEM 2025 memprioritaskan pilihan permasalahan yang diangkat pada pangan, energi, dan kesehatan (didasarkan pada 8 bidang fokus Rencana Induk Riset Nasional tahun 2017-2045) atau swasembada pangan,
+                            ekonomi kreatif, ekonomi hijau, ekonomi biru, dan kesehatan</p>
                         </div>
-                        <div className="w-fit p-5 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] rounded-2xl text-primary">
-                            <h1 className="mb-3 text-3xl font-extrabold text-center">MISI</h1>
-                            <p className="text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat culpa dolorem eum adipisci sed rem, unde maxime, amet magnam a exercitationem non veniam voluptatibus, aspernatur illo accusamus vel voluptate minus dolorum numquam quibusdam. Quia est ut ab voluptas nulla, quas consequatur, totam praesentium molestias at ea sunt magni cupiditate natus, iure optio suscipit iusto voluptatibus alias neque consectetur in facilis ipsa impedit. Enim, itaque et. Optio similique ea dolores accusantium eligendi error architecto, quia pariatur hic aliquid quae necessitatibus. Molestias, quas? Alias impedit est atque. Labore, repellat voluptates sequi iusto consequuntur laboriosam. Distinctio sint nobis hic deleniti ratione aut cum quas iure quae soluta? Soluta ea dignissimos, ratione dolor, dicta similique ducimus neque quae temporibus commodi exercitationem cum vero molestiae. Natus error at, veritatis provident ipsam reprehenderit vel in, corporis laborum libero ullam officia ut odit voluptatum delectus eveniet doloremque nemo maxime velit modi sit dignissimos alias dolor iusto! Atque.</p>
+                        <div className="w-full p-5 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] rounded-2xl text-primary">
+                            <h1 className="mb-3 text-3xl font-extrabold text-center">TUJUAN</h1>
+                            <p className="text-center">
+                                1. Bentuk nyata tanggung jawab sosial insan perguruan tinggi <br />
+                                2. Mendorong dosen dan mahasiswa untuk menerapkan ilmu dan keahlian secara langsung <br />
+                                3. Menumbuhkan jiwa kepemimpinan transformatif dan kepekaan sosial dalam diri mahasiswa <br />
+                                4. Memfasilitasi organisasi mahasiswa dalam merancang dan melaksanakan inisiatif sosial <br />
+                                5. Membangun kolaborasi strategis <br />
+                                6. Meningkatkan kepedulian mahasiswa terhadap masyarakat. <br />
+                                7. Wahana pembelajaran lintas disiplin dan lintas budaya 
+                            </p>
                         </div>
                     </div>
                 </div>
