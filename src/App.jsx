@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Homepage from "./pages/Homepage";
 import Galeripage from "./pages/Galeripage";
 import Prokerpage from "./pages/Prokerpage";
-import Memberpage from "./pages/Memberpage";
+import Profilepage from "./pages/Profilepage";
 
 
 function App() {
@@ -27,9 +27,9 @@ function App() {
 		{/* Content */}
 		<Routes>
 			<Route path="/" element={<Homepage />} />
-			<Route path="/galeri-kegiatan" element={<Galeripage />} />
-			<Route path="/program-kerja" element={<Prokerpage />} />
-			<Route path="/anggota" element={<Memberpage />} />
+			<Route path="/gallery" element={<Galeripage />} />
+			<Route path="/proker" element={<Prokerpage />} />
+			<Route path="/member" element={<Profilepage />} />
 		</Routes>
 
 		{/* Footer */}

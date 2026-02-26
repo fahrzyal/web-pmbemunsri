@@ -56,11 +56,11 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                             <FiHome className="md:hidden block text-2xl"/>
                             <a href="#beranda"
                             // onClick={() => setActiveMenu("beranda")}
-                            className='font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300'>Beranda</a>
+                            className='font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300'>Home</a>
                         </li>
                         <li className="flex items-center gap-3">
                             <PiMedal className="md:hidden block text-2xl"/>
-                            <a href="#tentang-kami" className="font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300">Tentang Kami</a>
+                            <a href="#tentang-kami" className="font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300">About Us</a>
                         </li>
                         <li className="flex items-center gap-3">
                             <FiUsers className="md:hidden block text-2xl"/>
@@ -70,7 +70,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                             <div className="flex flex-row gap-3 w-full">
                             <PiRocket className="md:hidden block text-2xl"/>
                             <button onClick={dropDownClick} className="flex items-center gap-1 font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300">
-                                Program Kerja 
+                                Proker 
                                 <IoIosArrowDown className={`
                                     transition-transform duration-300 
                                     ${isDropdownOpen ? "rotate-180" : ""}
@@ -106,9 +106,9 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                                 </li>
                             </ul>
                         </li>
-                        <li className="relative md:absolute flex items-center md:ml-155 gap-3">
+                        <li className="relative md:absolute flex items-center md:ml-140 gap-3">
                             <PiGooglePhotosLogo className="md:hidden block text-2xl"/>
-                            <a href="#" className="md:px-6 md:py-3 rounded-[25px] md:bg-linear-to-r from-[#22C55E] to-[#4ADE80] hover:from-[#16A34A] hover:to-[#22C55E] text-white transition-all duration-500 hover:scale-105">Galeri</a>
+                            <a href="#" className="md:px-6 md:py-3 rounded-[25px] md:bg-linear-to-r from-[#22C55E] to-[#4ADE80] hover:from-[#16A34A] hover:to-[#22C55E] text-white transition-all duration-500 hover:scale-105">Gallery</a>
                         </li>
                     </ul>
                     <div className="dark-mode flex justify-center items-center">

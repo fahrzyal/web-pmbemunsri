@@ -40,22 +40,22 @@ const Homepage = () => {
                             className="mySwiper w-screen h-screen"
                         >
                         <SwiperSlide className="relative">
-                            <img src="/assets/slider1-hero.webp" alt="" className="md:absolute inset-0 w-screen h-screen" />
+                            <img src="/assets/slider1-hero.webp" alt="" loading="lazy" className="md:absolute inset-0 w-screen h-screen" />
                             <div className="absolute inset-0 bg-black/30"></div>
                         </SwiperSlide>
                         <SwiperSlide className="relative">
-                            <img src="/assets/slider2-hero.webp" alt="" className="md:absolute inset-0 w-screen h-screen object-cover" />
+                            <img src="/assets/slider2-hero.webp" alt="" loading="lazy" className="md:absolute inset-0 w-screen h-screen object-cover" />
                             <div className="absolute inset-0 bg-black/30"></div>
                         </SwiperSlide>
                         <SwiperSlide className="relative">
-                            <img src="/assets/slider3-hero.webp" alt="" className="w-screen h-screen object-cover" />
+                            <img src="/assets/slider3-hero.webp" alt="" loading="lazy" className="w-screen h-screen object-cover" />
                             <div className="absolute inset-0 bg-black/30"></div>
                         </SwiperSlide>
                     </Swiper>
                     </div>
 
                     <div className="box-hero-2 md:absolute flex flex-col items-center justify-center z-10 mb-10 w-fit">
-                        <img src="/assets/logo-pmbemunsri.webp" alt="" className="w-full md:w-32 transition-transform duration-500 hover:scale-105" />
+                        <img src="/assets/logo-pmbemunsri.webp" alt="" loading="lazy" className="w-full md:w-32 transition-transform duration-500 hover:scale-105" />
                         <h1 className="text-center md:text-4xl text-2xl font-extrabold text-primary-text dark:text-white md:text-white leading-10 tracking-wide">
                             PROGRAM MAHASISWA BERDAMPAK <br />
                         <span className="md:text-3xl text-xl">
@@ -73,9 +73,9 @@ const Homepage = () => {
                         </div>
                         
                         <div className="flex flex-row gap-2">
-                            <img src="/assets/logo-kemendikti.webp" alt="" className="w-10" />
-                            <img src="/assets/logo-mahasiswa-berdampak-circle.webp" alt="" className="w-10 " />
-                            <img src="/assets/logo-mahasiswa-berdampak-box.webp" alt="" className="w-32" />
+                            <img src="/assets/logo-kemendikti.webp" alt="" loading="lazy" className="w-10" />
+                            <img src="/assets/logo-mahasiswa-berdampak-circle.webp" alt="" loading="lazy" className="w-10 " />
+                            <img src="/assets/logo-mahasiswa-berdampak-box.webp" alt="" loading="lazy" className="w-32" />
                         </div>
                     </div>
                 </div>
@@ -111,20 +111,20 @@ const Homepage = () => {
                     </div>
 
                     <div className="box-about-2 relative flex items-center justify-center w-screen md:w-1/2 h-fit md:h-full">
-                        <img src="/assets/element-blurr.webp" alt="" className="absolute top-1 right-14 w-40 animate-spin [animation-duration:40s] origin-center"/>
-                        <img src="/assets/element-blurr.webp" alt="" className=" absolute bottom-150 md:bottom-6 left-40 md:left-19 w-10 md:w-30 animate-spin [animation-duration:40s] [animation-direction:reverse] origin-center"/>
-                        <img src="/assets/logo-pmbemunsri.webp" alt="" title="Logo PM BEM Unsri" className="hidden md:block absolute py-6 w-70 md:w-sm bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] rounded-2xl transition-transform ease-in-out duration-500 rotate-6 hover:rotate-0" />
+                        <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="absolute top-1 right-14 w-40 animate-spin [animation-duration:40s] origin-center"/>
+                        <img src="/assets/element-blurr.webp" alt="" loading="lazy" className=" absolute bottom-150 md:bottom-6 left-40 md:left-19 w-10 md:w-30 animate-spin [animation-duration:40s] [animation-direction:reverse] origin-center"/>
+                        <img src="/assets/logo-pmbemunsri.webp" alt="" loading="lazy" title="Logo PM BEM Unsri" className="hidden md:block absolute py-6 w-70 md:w-sm bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] dark:shadow-[1px_1px_15px_rgba(255,255,255,0.5)] rounded-2xl transition-transform ease-in-out duration-500 rotate-6 hover:rotate-0" />
                     </div>
                 </div>
 
                 {/* Fokus Tujuan Section */}
-                <div id='tentang-kami' className="fokus-tujuan flex justify-center md:px-30 md:pt-28 w-screen h-screen overflow-hidden">"
+                <div id='tentang-kami' className="fokus-tujuan flex justify-center md:px-30 md:pt-28 w-screen h-screen">
                     <div className="box-fokus-tujuan-1 relative flex flex-col items-center w-screen h-screen">
-                        <div className="hidden md:block absolute -right-7 -top-7 w-fit">
-                            <img src="/assets/element-blurr.webp" alt="" className="w-sm animate-spin [animation-duration:90s] origin-center" />
+                            <div className="hidden md:block absolute -right-7 -top-7 w-fit">
+                            <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="w-sm animate-spin [animation-duration:90s] origin-center" />
                         </div>
                         <div className="absolute bottom-60 left-0 md:-left-20 md:bottom-5 w-fit">
-                            <img src="/assets/element-blurr.webp" alt="" className="w-lg animate-spin [animation-duration:110s] [animation-direction:reverse] origin-center" />
+                            <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="w-lg animate-spin [animation-duration:110s] [animation-direction:reverse] origin-center" />
                         </div>
                     </div>
                     <div className="box-fokus-tujuan-2 absolute flex flex-col items-center pt-10 md:pt-0 px-10 gap-7 md:w-7xl">
@@ -133,16 +133,16 @@ const Homepage = () => {
                                 <div className="h-1.5 w-7 mb-3 bg-green-500 mt-2 rounded-full"></div>
                                 <div className="h-1.5 w-2 mb-3 bg-green-500 mt-2 rounded-full"></div> 
                             </div>
-                            <h1 className="font-black text-secondary-text text-4xl md:text-5xl">FOKUS <span className="text-primary-text dark:text-white">& TUJUAN</span></h1>
+                            <h1 className="font-black text-secondary-text text-4xl md:text-5xl">FOCUS <span className="text-primary-text dark:text-white">& GOALS</span></h1>
                         </div>
-                        <div className="w-full p-7 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] rounded-2xl text-primary-text dark:text-white transition-transform duration-500 hover:scale-105">
-                            <h1 className="mb-3 text-3xl font-extrabold text-center">FOKUS</h1>
+                        <div className="w-full p-7 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] dark:shadow-[1px_1px_15px_rgba(255,255,255,0.5)] rounded-2xl text-primary-text dark:text-white transition-transform duration-500 hover:scale-105">
+                            <h1 className="mb-3 text-3xl font-extrabold text-center">FOCUS</h1>
                             <p className="text-center">
                             PM-BEM 2025 memprioritaskan pilihan permasalahan yang diangkat pada pangan, energi, dan kesehatan (didasarkan pada 8 bidang fokus Rencana Induk Riset Nasional tahun 2017-2045) atau swasembada pangan,
                             ekonomi kreatif, ekonomi hijau, ekonomi biru, dan kesehatan</p>
                         </div>
-                        <div className="w-full p-7 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] rounded-2xl text-primary-text dark:text-white transition-transform duration-500 hover:scale-105">
-                            <h1 className="mb-3 text-3xl font-extrabold text-center">TUJUAN</h1>
+                        <div className="w-full p-7 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] dark:shadow-[1px_1px_15px_rgba(255,255,255,0.5)] rounded-2xl text-primary-text dark:text-white transition-transform duration-500 hover:scale-105">
+                            <h1 className="mb-3 text-3xl font-extrabold text-center">GOALS  </h1>
                             <p className="text-center">
                                 1. Bentuk nyata tanggung jawab sosial insan perguruan tinggi <br />
                                 2. Mendorong dosen dan mahasiswa untuk menerapkan ilmu dan keahlian secara langsung <br />
@@ -153,6 +153,84 @@ const Homepage = () => {
                                 7. Wahana pembelajaran lintas disiplin dan lintas budaya 
                             </p>
                         </div>
+                    </div>
+                </div>
+
+                {/* Lokasi Pengabdian */}
+                <div className="lokasi-pengabdian b w-screen h-fit md:h-screen pt-36 md:pt-28 px-10 md:px-30">
+                    <div className="box-1-lokasi flex flex-col justify-center items-center w-full h-fit">
+                        <div className="flex justify-center gap-1 transition-transform duration-500 hover:scale-103">
+                            <div className="h-1.5 w-7 mb-3 bg-green-500 mt-2 rounded-full"></div>
+                            <div className="h-1.5 w-2 mb-3 bg-green-500 mt-2 rounded-full"></div> 
+                        </div>
+                        <h1 className="mb-5 text-center font-black text-primary-text dark:text-white text-4xl md:text-5xl transition-transform duration-500 hover:scale-103">LOCATION <span className="text-secondary-text">SERVICE</span></h1>
+                        <p className="mb-3 text-center text-sm md:text-xl text-primary-text dark:text-white transition-transform duration-500 hover:scale-103">Informasi mengenai lokasi pelaksanaan kegiatan pengabdian masyarakat sebagai <br /> bentuk kontribusi nyata kami di wilayah sasaran.</p>
+                        <div className="h-1.5 w-3 mb-3 bg-green-500 mt-2 rounded-full"></div>
+                    </div>
+                    <div className="box-2-lokasi flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 md:px-10 w-full h-fit">
+                        <div className="md:w-1/2 h-full transition-transform duration-500 hover:scale-105">
+                            <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31841.324681628743!2d103.29399835076613!3d-3.9863356431876764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e37684c922195c3%3A0x4304aef944373e32!2sPadjarbulan%2C%20Talang%20Padang%20Tinggi%2C%20Kec.%20Pajar%20Bulan%2C%20Kabupaten%20Lahat%2C%20Sumatera%20Selatan!5e0!3m2!1sid!2sid!4v1772085649173!5m2!1sid!2sid" 
+                        
+                            style={{ border: 0 }} 
+                            allowFullScreen={true}
+                            loading="lazy" 
+                            referrerPolicy="no-referrer-when-downgrade"
+                            className="w-full h-50 md:h-90 rounded-2xl dark:invert-[0.9] shadow-[1px_1px_15px_rgba(0,0,0,0.25)] transition-all duration-300">
+                            </iframe>
+                        </div>
+                        <div className="md:p-4 md:w-1/2 h-full bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] dark:shadow-[1px_1px_15px_rgba(255,255,255,0.5)] rounded-2xl text-primary-text dark:text-white transition-transform duration-500 hover:scale-105">
+                                <table className="w-full border border-gray-200 dark:border-gray-700">
+                                    <tbody>
+                                    <tr>
+                                        <td className="p-4 font-extrabold text-md md:text-lg border-hidden dark:text-white">
+                                            Batas Wilayah :
+                                        </td>
+                                        <td className="px-4 py-2 border-hidden dark:text-white">
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="px-8 py-2 text-sm md:text-lg border-hidden dark:text-white">
+                                            UTARA <br />
+                                            Kecamatan Jarai
+                                            </td>
+                                        <td className="px-4 py-2 text-sm md:text-lg border-hidden dark:text-white">
+                                            SELATAN <br />
+                                            Kota Pagaralam
+                                            </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td className="px-8 py-2 text-sm md:text-lg border-hidden dark:text-white">
+                                            TIMUR <br />
+                                            Kecamatan Sukamerindu
+                                        </td>
+                                        <td className="px-4 py-2 text-sm md:text-lg border-hidden dark:text-white">
+                                            BARAT <br />
+                                            Kecamatan Jarai
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="p-4 font-extrabold text-md md:text-lg border-hidden dark:text-white">
+                                            Luas Desa :
+                                        </td>
+                                        <td className="px-4 py-2 text-sm md:text-lg border-hidden dark:text-white">
+                                            3,37 km²
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="p-4 font-extrabold text-md md:text-lg border-hidden dark:text-white">
+                                            Jumlah Penduduk :
+                                        </td>
+                                        <td className="px-4 py-2 text-sm md:text-lg border-hidden dark:text-white">
+                                            816 Jiwa(Th. 2023)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="absolute left-15 mt-100 w-20 animate-spin [animation-duration:30s] origin-center" />
                     </div>
                 </div>
             </div>
