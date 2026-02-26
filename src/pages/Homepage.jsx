@@ -1,4 +1,5 @@
 import React from 'react';
+import OutputSection from '../components/OutputSection';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -41,15 +42,15 @@ const Homepage = () => {
                         >
                         <SwiperSlide className="relative">
                             <img src="/assets/slider1-hero.webp" alt="" loading="lazy" className="md:absolute inset-0 w-screen h-screen" />
-                            <div className="absolute inset-0 bg-black/30"></div>
+                            <div className="absolute inset-0"></div>
                         </SwiperSlide>
                         <SwiperSlide className="relative">
                             <img src="/assets/slider2-hero.webp" alt="" loading="lazy" className="md:absolute inset-0 w-screen h-screen object-cover" />
-                            <div className="absolute inset-0 bg-black/30"></div>
+                            <div className="absolute inset-0"></div>
                         </SwiperSlide>
                         <SwiperSlide className="relative">
                             <img src="/assets/slider3-hero.webp" alt="" loading="lazy" className="w-screen h-screen object-cover" />
-                            <div className="absolute inset-0 bg-black/30"></div>
+                            <div className="absolute inset-0"></div>
                         </SwiperSlide>
                     </Swiper>
                     </div>
@@ -157,18 +158,18 @@ const Homepage = () => {
                 </div>
 
                 {/* Lokasi Pengabdian */}
-                <div className="lokasi-pengabdian b w-screen h-fit md:h-screen pt-36 md:pt-28 px-10 md:px-30">
+                <div className="lokasi-pengabdian w-screen h-fit md:h-screen pt-36 md:pt-28 px-10 md:px-30">
                     <div className="box-1-lokasi flex flex-col justify-center items-center w-full h-fit">
                         <div className="flex justify-center gap-1 transition-transform duration-500 hover:scale-103">
-                            <div className="h-1.5 w-7 mb-3 bg-green-500 mt-2 rounded-full"></div>
-                            <div className="h-1.5 w-2 mb-3 bg-green-500 mt-2 rounded-full"></div> 
+                            <div className="h-1.5 w-2 mb-3 bg-green-500 mt-2 rounded-full"></div>
+                            <div className="h-1.5 w-7 mb-3 bg-green-500 mt-2 rounded-full"></div> 
                         </div>
                         <h1 className="mb-5 text-center font-black text-primary-text dark:text-white text-4xl md:text-5xl transition-transform duration-500 hover:scale-103">LOCATION <span className="text-secondary-text">SERVICE</span></h1>
                         <p className="mb-3 text-center text-sm md:text-xl text-primary-text dark:text-white transition-transform duration-500 hover:scale-103">Informasi mengenai lokasi pelaksanaan kegiatan pengabdian masyarakat sebagai <br /> bentuk kontribusi nyata kami di wilayah sasaran.</p>
-                        <div className="h-1.5 w-3 mb-3 bg-green-500 mt-2 rounded-full"></div>
+                        <div className="h-1.5 w-3 mb-3 bg-[#D4E94E] mt-2 rounded-full"></div>
                     </div>
                     <div className="box-2-lokasi flex flex-col md:flex-row justify-center items-center gap-5 md:gap-10 md:px-10 w-full h-fit">
-                        <div className="md:w-1/2 h-full transition-transform duration-500 hover:scale-105">
+                        <div className="md:w-1/2 w-full h-full transition-transform duration-500 hover:scale-105">
                             <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31841.324681628743!2d103.29399835076613!3d-3.9863356431876764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e37684c922195c3%3A0x4304aef944373e32!2sPadjarbulan%2C%20Talang%20Padang%20Tinggi%2C%20Kec.%20Pajar%20Bulan%2C%20Kabupaten%20Lahat%2C%20Sumatera%20Selatan!5e0!3m2!1sid!2sid!4v1772085649173!5m2!1sid!2sid" 
                         
@@ -232,6 +233,11 @@ const Homepage = () => {
                         </div>
                         <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="absolute left-15 mt-100 w-20 animate-spin [animation-duration:30s] origin-center" />
                     </div>
+                </div>
+                        
+                {/* Luaran */}
+                <div className="luaran w-screen h-fit md:h-fit pt-10 px-10 md:px-30">
+                    <OutputSection />
                 </div>
             </div>
         </div>
