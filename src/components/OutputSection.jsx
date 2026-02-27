@@ -5,6 +5,7 @@ const OutputSection = () => {
 const [activeTab, setActiveTab] = useState('artikel');
 
 return (
+    <div className="luaran w-screen h-fit md:h-fit pt-10 md:px-30">
     <div className="max-full mx-auto p-10">
         {/* Header Output */}
         <div className="flex flex-col justify-start">
@@ -36,7 +37,7 @@ return (
         </div>
 
         {/* Grid 5 Kolom */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           
           {(activeTab === 'artikel' || activeTab === 'program') && outputData[activeTab].map((item) => (
             <div 
@@ -84,7 +85,7 @@ return (
 
         </div>
       </div>
-    
+    </div>
   );
 };
 

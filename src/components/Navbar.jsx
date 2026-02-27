@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // React Icons
 import { FiMenu, FiHome, FiUsers, FiSun } from "react-icons/fi";
@@ -50,17 +51,16 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                         bg-[#22C55E] md:bg-transparent
                         text-white md:text-primary-text
                         shadow-[1px_1px_15px_rgba(0,0,0,0.25)] md:shadow-none 
-                        transition-all
                         `}>
                         <li className="flex items-center gap-3">
                             <FiHome className="md:hidden block text-2xl"/>
-                            <a href="#beranda"
+                            <Link to="/"
                             // onClick={() => setActiveMenu("beranda")}
-                            className='font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300'>Home</a>
+                            className='font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300'>Home</Link>
                         </li>
                         <li className="flex items-center gap-3">
                             <PiMedal className="md:hidden block text-2xl"/>
-                            <a href="#tentang-kami" className="font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300">About Us</a>
+                            <Link to="/about-us" className="font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300">About Us</Link>
                         </li>
                         <li className="flex items-center gap-3">
                             <FiUsers className="md:hidden block text-2xl"/>
@@ -89,7 +89,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                                 rounded-xl
                                 md:bg-[#22C55E] text-white
                                 md:shadow-lg
-                                transition-all duration-300
+                                transition-all duration-300 
                                 ${
                                 isDropdownOpen
                                     ? "opacity-100 scale-100 translate-y-0"
@@ -98,7 +98,7 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                             `}>
                                 <li className="flex flex-row items-center gap-2 font-normal text-base">
                                     <GiCoffeeBeans />
-                                    <a href="">Home Dry Coffee</a>
+                                    <Link to="/homedrycoffee">Home Dry Coffee</Link>
                                 </li>
                                 <li className="flex flex-row gap-2 font-normal text-base">
                                     <MdOutlineRecycling className="mt-1"/>
