@@ -14,7 +14,7 @@ const Shortstory = () => {
             </div>
 
             <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="hidden md:block absolute left-60 md:left-300 mt-165 md:mt-7 w-40 animate-spin [animation-duration:70s] origin-center" />
-            <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="hidden md:block absolute left-60 md:left-50 mt-165 md:mt-120 w-20 animate-spin [animation-duration:30s] origin-center" />
+            <img src="/assets/element-blurr.webp" alt="" loading="lazy" className="hidden md:block absolute left-60 md:left-50 mt-165 md:mt-120 w-20 animate-spin [animation-direction:reverse] [animation-duration:30s] origin-center" />
 
             {/* 1. VIDEO PLAYER (Sekarang di Atas) */}
             <div className="w-full md:px-30">

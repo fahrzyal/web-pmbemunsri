@@ -105,7 +105,7 @@ return (
                     className="group flex items-center gap-3 p-5 font-medium text-sm rounded-full bg-linear-to-r from-[#22C55E] to-[#4ADE80] hover:from-[#16A34A] hover:to-[#22C55E] text-white transition-all duration-500 hover:scale-105 uppercase"
                 >
                     <span className="group-hover:-translate-x-2 transition-transform duration-300">←</span> 
-                    Back to Home
+                    Back to Prev
                 </button>
             </div>
         </main>

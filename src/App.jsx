@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Navbar from "./components/navbar";
 import Footer from "./components/Footer";
@@ -20,6 +21,10 @@ function App() {
 
 	return <>
 	<div className={isDarkMode ? "dark" : ""}>
+		{/* Scroll to Top */}
+		<ScrollToTop />
+
+		{/* Navbar */}
 		<Navbar 
 			toggleDarkMode={toggleDarkMode} 
 			isDarkMode={isDarkMode} 
@@ -29,9 +34,9 @@ function App() {
 		<Routes>
 			<Route path="/" element={<Homepage />} />
 			<Route path="/about-us" element={<Aboutpage />} />
-			<Route path="/gallery" element={<Galeripage />} />
-			<Route path="/homedrycoffee" element={<Homedrypage />} />
 			<Route path="/member" element={<Profilepage />} />
+			<Route path="/homedrycoffee" element={<Homedrypage />} />
+			<Route path="/gallery" element={<Galeripage />} />
 		</Routes>
 
 		{/* Footer */}

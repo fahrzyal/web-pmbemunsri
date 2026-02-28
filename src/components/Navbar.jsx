@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 // React Icons
 import { FiMenu, FiHome, FiUsers, FiSun } from "react-icons/fi";
@@ -9,6 +9,11 @@ import { MdOutlineRecycling } from "react-icons/md";
 import { GiCoffeeBeans } from "react-icons/gi";
 
 const Navbar = ({ toggleDarkMode, isDarkMode }) => {
+    const linkStyle = ({ isActive }) => 
+        isActive 
+        ? "text-secondary-text font-semibold hover:text-secondary-text  transition-transform duration-300"
+        : "font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300";
+
     // TODO: handle click for mobile menu
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -54,28 +59,28 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                         `}>
                         <li className="flex items-center gap-3">
                             <FiHome className="md:hidden block text-2xl"/>
-                            <Link to="/"
+                            <NavLink to="/"
                             // onClick={() => setActiveMenu("beranda")}
-                            className='font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300'>Home</Link>
+                            className={ linkStyle }>Home</NavLink>
                         </li>
                         <li className="flex items-center gap-3">
                             <PiMedal className="md:hidden block text-2xl"/>
-                            <Link to="/about-us" className="font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300">About Us</Link>
+                            <NavLink to="/about-us" className={ linkStyle }>About Us</NavLink>
                         </li>
                         <li className="flex items-center gap-3">
                             <FiUsers className="md:hidden block text-2xl"/>
-                            <a href="#visi-misi" className="font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300">Profile</a>
+                            <NavLink to="/profile" className={ linkStyle }>Profile</NavLink>
                         </li>
                         <li className="relative flex flex-col md:flex-row items-center gap-3">
                             <div className="flex flex-row gap-3 w-full">
                             <PiRocket className="md:hidden block text-2xl"/>
-                            <button onClick={dropDownClick} className="flex items-center gap-1 font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300">
+                            <NavLink onClick={dropDownClick} className='flex items-center gap-1 font-medium hover:text-secondary-text hover:font-semibold transition-transform duration-300'>
                                 Proker 
                                 <IoIosArrowDown className={`
                                     transition-transform duration-300 
                                     ${isDropdownOpen ? "rotate-180" : ""}
                                     `} />
-                            </button>
+                            </NavLink>
                             </div>
 
                             {/* Dropdown Program Kerja Menu */}
@@ -98,17 +103,17 @@ const Navbar = ({ toggleDarkMode, isDarkMode }) => {
                             `}>
                                 <li className="flex flex-row items-center gap-2 font-normal text-base">
                                     <GiCoffeeBeans />
-                                    <Link to="/homedrycoffee">Home Dry Coffee</Link>
+                                    <NavLink to="/homedrycoffee">Home Dry Coffee</NavLink>
                                 </li>
                                 <li className="flex flex-row gap-2 font-normal text-base">
                                     <MdOutlineRecycling className="mt-1"/>
-                                    <a href="">Pengolahan Limbah <br />Kopi</a>
+                                    <NavLink to="">Pengolahan Limbah <br />Kopi</NavLink>
                                 </li>
                             </ul>
                         </li>
                         <li className="relative md:absolute flex items-center md:ml-140 gap-3">
                             <PiGooglePhotosLogo className="md:hidden block text-2xl"/>
-                            <a href="#" className="md:px-6 md:py-3 rounded-[25px] md:bg-linear-to-r from-[#22C55E] to-[#4ADE80] hover:from-[#16A34A] hover:to-[#22C55E] text-white transition-all duration-500 hover:scale-105">Gallery</a>
+                            <NavLink to="/gallery" className="md:px-6 md:py-3 rounded-[25px] md:bg-linear-to-r from-[#22C55E] to-[#4ADE80] hover:from-[#16A34A] hover:to-[#22C55E] text-white transition-all duration-500 hover:scale-105">Gallery</NavLink>
                         </li>
                     </ul>
                     <div className="dark-mode flex justify-center items-center">

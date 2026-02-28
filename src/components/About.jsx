@@ -8,7 +8,7 @@ const About = () => {
         <div>
         <div>
             {/* About Section*/}
-            <div id='about-us' className="about-us flex flex-col md:flex-row items-center w-screen h-fit md:h-screen md:pt-28 px-30">
+            <div id='about-us' className="about-us flex flex-col md:flex-row items-center md:h-screen md:pt-30 md:px-30">
                 <div className="box-about-1 flex flex-col items-center w-screen md:w-1/2 h-fit md:h-full">
                     <div className="flex flex-col gap-5 pt-15 px-10 w-screen md:w-full text-primary-text dark:text-white">
                         <div className="flex flex-row gap-1">
