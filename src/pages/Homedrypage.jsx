@@ -17,7 +17,7 @@ const data = {
         id: 1,
         image: "/assets/Proker/2.webp",
         text: 
-        "Pada 29 Oktober 2025, tim pelaksana program pemberdayaan masyarakat resmi memulai pembangunan rumah pengeringan kopi. Kegiatan ini dilatarbelakangi oleh kebutuhan petani akan fasilitas pascapanen yang lebih efektif, terutama untuk menjaga kualitas dan nilai jual biji kopi. Proyek yang berlangsung hingga 22 Desember 2025 ini menjadi langkah konkret dalam meningkatkan kapasitas pengolahan hasil perkebunan di desa tersebut."
+        "Pada 29 Oktober 2025 ind, tim pelaksana program pemberdayaan masyarakat resmi memulai pembangunan rumah pengeringan kopi. Kegiatan ini dilatarbelakangi oleh kebutuhan petani akan fasilitas pascapanen yang lebih efektif, terutama untuk menjaga kualitas dan nilai jual biji kopi. Proyek yang berlangsung hingga 22 Desember 2025 ini menjadi langkah konkret dalam meningkatkan kapasitas pengolahan hasil perkebunan di desa tersebut."
     },
     {
         id: 2,
