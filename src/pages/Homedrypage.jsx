@@ -28,7 +28,7 @@ const data = {
 };
 
 return (
-    <article className="w-full min-h-screen dark:bg-primary-dark transition-colors duration-500 pb-20 px-10 md:px-35 bg-red-500">
+    <article className="w-full min-h-screen dark:bg-primary-dark transition-colors duration-500 pb-20 px-10 md:px-35">
 
         {/* Header Artikel (Center) */}
         <header data-aos="fade-down" className="relative w-full mx-auto px-4 pt-32 md:pt-40 text-center">

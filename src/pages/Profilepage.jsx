@@ -107,49 +107,49 @@ const Profilepage = () => {
             {/* Modal Detail Member (Sama Seperti Sebelumnya) */}
             {selectedMember && (
                 <div className="fixed inset-0 z-10000 flex items-center justify-center p-6 bg-white/45 backdrop-blur-[5px]">
-                <div className="relative w-full max-w-4xl bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row animate-in fade-in zoom-in duration-300">
-                    
-                    <button 
-                    onClick={() => setSelectedMember(null)}
-                    className="absolute top-8 right-8 z-10 p-2 bg-slate-100 dark:bg-white/10 rounded-full hover:rotate-90 transition-all duration-500 dark:text-white cursor-pointer"
-                    >
-                    <IoCloseOutline size={30} />
-                    </button>
+                    <div className="relative w-full max-w-4xl bg-white dark:bg-slate-900 rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row animate-in fade-in zoom-in duration-300">
+                        
+                        <button 
+                        onClick={() => setSelectedMember(null)}
+                        className="absolute top-8 right-8 z-10 p-2 bg-slate-100 dark:bg-white/10 rounded-full hover:rotate-90 transition-all duration-500 dark:text-white cursor-pointer"
+                        >
+                        <IoCloseOutline size={30} />
+                        </button>
 
-                    {/* Kiri: Foto */}
-                    <div className="w-full md:w-1/2 h-96 md:h-auto">
-                    <img src={selectedMember.src} alt={selectedMember.name} className="w-full h-full object-cover" />
-                    </div>
+                        {/* Kiri: Foto */}
+                        <div className="w-full md:w-1/2 h-96 md:h-auto">
+                        <img src={selectedMember.src} alt={selectedMember.name} className="w-full h-full object-cover" />
+                        </div>
 
-                    {/* Kanan: Info */}
-                    <div className="w-full md:w-1/2 p-10 md:p-16 flex flex-col justify-center">
-                    <span className="text-secondary-text font-black uppercase tracking-[0.4em] text-[10px] mb-3">
-                        {selectedMember.div} Division
-                    </span>
-                    <h2 className="text-3xl md:text-5xl font-black text-primary-text dark:text-white uppercase leading-none mb-2">
-                        {selectedMember.name}
-                    </h2>
-                    <p className="text-slate-400 font-bold mb-10 uppercase tracking-[0.2em] text-xs">
-                        {selectedMember.role}
-                    </p>
-                    
-                    <div className="relative mb-10">
-                        <p className="text-slate-600 dark:text-slate-300 italic text-sm leading-relaxed border-l-4 border-[#D4E94E] pl-6">
-                        "{selectedMember.quote}"
+                        {/* Kanan: Info */}
+                        <div className="w-full md:w-1/2 p-10 md:p-16 flex flex-col justify-center">
+                        <span className="text-secondary-text font-black uppercase tracking-[0.4em] text-[10px] mb-3">
+                            {selectedMember.div} Division
+                        </span>
+                        <h2 className="text-3xl md:text-5xl font-black text-primary-text dark:text-white uppercase leading-none mb-2">
+                            {selectedMember.name}
+                        </h2>
+                        <p className="text-slate-400 font-bold mb-10 uppercase tracking-[0.2em] text-xs">
+                            {selectedMember.role}
                         </p>
-                    </div>
+                        
+                        <div className="relative mb-10">
+                            <p className="text-slate-600 dark:text-slate-300 italic text-sm leading-relaxed border-l-4 border-[#D4E94E] pl-6">
+                            "{selectedMember.quote}"
+                            </p>
+                        </div>
 
-                    <a 
-                        href={`https://instagram.com/${selectedMember.ig.replace('@', '')}`}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="flex items-center justify-center gap-2 w-full py-5 bg-slate-900 dark:bg-[#D4E94E] text-white dark:text-slate-900 rounded-3xl font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl shadow-[#D4E94E]/10"
-                    >
-                        <IoLogoInstagram size={22} />
-                        Instagram
-                    </a>
+                        <a 
+                            href={`https://instagram.com/${selectedMember.ig.replace('@', '')}`}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="flex items-center justify-center gap-2 w-full py-5 bg-slate-900 dark:bg-[#D4E94E] text-white dark:text-slate-900 rounded-3xl font-black uppercase tracking-widest hover:scale-105 transition-all shadow-xl shadow-[#D4E94E]/10"
+                        >
+                            <IoLogoInstagram size={22} />
+                            Instagram
+                        </a>
+                        </div>
                     </div>
-                </div>
                 </div>
             )}
         </div>

@@ -32,9 +32,9 @@ const Footer = () => {
                     <div className="text-center md:text-right">
                         <h1 className="mb-3 mt-5 md:mt-0 font-extrabold text-md md:text-xl text-primary-text dark:text-white">Supported by :</h1>
                         <div className="flex items-center gap-2 justify-center md:justify-end">
-                            <img src="public/assets/logo-kemendikti.webp" loading="lazy" alt="" className="w-10 md:w-15"/>
-                            <img src="public/assets/logo-mahasiswa-berdampak-circle.webp" loading="lazy" alt="" className="w-10 md:w-15"/>
-                            <img src="public/assets/logo-mahasiswa-berdampak-box.webp" loading="lazy" alt="" className="w-35 md:w-40" />
+                            <img src="/assets/logo-kemendikti.webp" loading="lazy" alt="" className="w-10 md:w-15"/>
+                            <img src="/assets/logo-mahasiswa-berdampak-circle.webp" loading="lazy" alt="" className="w-10 md:w-15"/>
+                            <img src="/assets/logo-mahasiswa-berdampak-box.webp" loading="lazy" alt="" className="w-35 md:w-40" />
                         </div>
                     </div>
                 </div>
