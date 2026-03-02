@@ -4,7 +4,7 @@ const Shortstory = () => {
   return (
     <div>
     <div>
-        <secion className="container mx-auto relative z-10 flex flex-col items-center w-screen h-fit md:h-screen pt-10 px-10 md:px-30">
+        <secion className="container mx-auto relative z-10 flex flex-col items-center w-screen h-fit md:h-screen pt-0 md:pt-10 px-10 md:px-30">
             <div data-aos="zoom-in" className="">
                 <div className="flex justify-center gap-1 w-full transition-transform duration-500 hover:scale-103">
                     <div className="h-1.5 w-2 mb-3 bg-green-500 mt-2 rounded-full"></div>

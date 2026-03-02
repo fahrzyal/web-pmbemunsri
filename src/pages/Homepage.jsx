@@ -25,7 +25,7 @@ const Homepage = () => {
         <div className="homepage flex items-center justify-center w-full dark:bg-primary-dark transition-colors duration-300">
             <div className="container flex flex-col items-center w-full pt-32 md:pt-0 overflow-hidden">
                 {/* Hero Section */}
-                <div data-aos="fade-down" id='beranda' className="hero md:relative flex flex-col items-center justify-center md:h-screen -mb-30 md:mb-0 mx-5 md:mx-0 overflow-hidden">
+                <div data-aos="fade-down" id='beranda' className="hero md:relative flex flex-col items-center justify-center md:h-screen mx-5 md:mx-0 overflow-hidden">
                     <div className="box-hero-1 md:relative lg:block hidden">
                         <Swiper
                             spaceBetween={0}
