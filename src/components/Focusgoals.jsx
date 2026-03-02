@@ -22,14 +22,14 @@ const Focusgoals = () => {
                     <h1 className="font-black text-secondary-text text-4xl md:text-5xl">FOCUS <span className="text-primary-text dark:text-white">& GOALS</span></h1>
                 </div>
                 <div data-aos="fade-right" className="w-full h-70 md:h-fit p-7 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] dark:shadow-[1px_1px_15px_rgba(255,255,255,0.5)] rounded-2xl text-primary-text dark:text-white overflow-y-auto transition-transform duration-500 hover:scale-105">
-                    <h1 className="mb-3 text-3xl font-extrabold text-center">FOCUS</h1>
-                    <p className="text-justify md:text-center">
+                    <h1 className="mb-3 text-2xl md:text-3xl font-extrabold text-center">FOCUS</h1>
+                    <p className="text-justify md:text-center text-sm md:text-lg">
                     PM-BEM 2025 memprioritaskan pilihan permasalahan yang diangkat pada pangan, energi, dan kesehatan (didasarkan pada 8 bidang fokus Rencana Induk Riset Nasional tahun 2017-2045) atau swasembada pangan,
                     ekonomi kreatif, ekonomi hijau, ekonomi biru, dan kesehatan</p>
                 </div>
                 <div data-aos="fade-left" className="w-full h-70 md:h-fit p-7 bg-white/45 backdrop-blur-[15px] border border-white shadow-[1px_1px_15px_rgba(0,0,0,0.25)] dark:shadow-[1px_1px_15px_rgba(255,255,255,0.5)] rounded-2xl text-primary-text dark:text-white overflow-y-auto transition-transform duration-500 hover:scale-105">
-                    <h1 className="mb-3 text-3xl font-extrabold text-center">GOALS  </h1>
-                    <p className="text-justify md:text-center">
+                    <h1 className="mb-3 text-2xl md:text-3xl font-extrabold text-center">GOALS  </h1>
+                    <p className="text-justify md:text-center text-sm md:text-lg">
                         1. Bentuk nyata tanggung jawab sosial insan perguruan tinggi <br />
                         2. Mendorong dosen dan mahasiswa untuk menerapkan ilmu dan keahlian secara langsung <br />
                         3. Menumbuhkan jiwa kepemimpinan transformatif dan kepekaan sosial dalam diri mahasiswa <br />
